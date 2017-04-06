@@ -13,7 +13,7 @@ ffmpeg -f avfoundation -pixel_format yuv420p -r 30 -i "1:1" -vcodec libx264 -pre
 # playing data in raspberry pi
 omxplayer udp://0.0.0.0:8888
 
-#challenges & to do
+# challenges & to do
 - speed up enconding in server so that speed remains above 1;
 - play around with ffmpeg parameters in order to improve quality and reduce cpu load;
 - test reliability for the long-term;
