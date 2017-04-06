@@ -48,4 +48,5 @@ This project motivates me because it allows me to explore three particular quest
 [Image Fulgurator](https://juliusvonbismarck.com/bank/index.php?/projects/image-fulgurator/2/), by Julius Von Bismark, 2007.
 
 --
+
 [Jeraman](https://jeraman.info), 2016.

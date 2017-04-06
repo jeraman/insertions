@@ -1,4 +1,4 @@
-#Insertion N.1 - Fora Temer!
+# Insertion N.1 - Fora Temer!
 
 [![VIDEO](video.png)](http://www.youtube.com/watch?v=Uqnc-J1KpdI "VIDEO")
 
@@ -16,6 +16,3 @@
 
 --
 [Jeraman](jeraman.info), 2016.
-
-
-

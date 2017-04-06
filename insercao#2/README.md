@@ -1,4 +1,4 @@
-#Insertion N. 2: Solta a batida aê, cumpadi!
+# Insertion N. 2: Solta a batida aê, cumpadi!
 
 [![VIDEO](video.png)](https://www.youtube.com/watch?v=PiFNaQoV3cQ "VIDEO")
 
@@ -16,6 +16,3 @@
 
 --
 [Jeraman](jeraman.info), 2016.
-
-
-
