@@ -4,15 +4,14 @@ Here, I cover research on:
 2. **Efficient backstream**: How to efficiently stream the manipulated video back to the internet/Raspberry PI?
 
 ## Efficient capturing
-We need to be able to capture [m3u](https://en.wikipedia.org/wiki/M3U) files used by [HLS](https://tools.ietf.org/html/draft-pantos-http-live-streaming-20) and import it as a regular video into code. M3u is used both by youtube live and by Suntek's streamserver.
+We need to be able to capture [m3u](https://en.wikipedia.org/wiki/M3U) files used by [HLS](https://tools.ietf.org/html/draft-pantos-http-live-streaming-20) and import it as a regular video into code. M3u is used both by youtube live and by Suntek's streamserver. Apple's [AvFoundation](https://en.wikipedia.org/wiki/AVFoundation) is able to play m3u8 files.
 
-A m3u file for testing:
+A m3u sample file (that you can also open in VLC or Quicktime):
+```
+ffplay http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8
+```
 
-http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8
-
-It seems that AvFoundation is able to play m3u8 files. Digging into this direction now.
-
-Tried this using oF's native ofVideoPlayer with no success. Posted a question here:
+Tried to read these files in oF's native ofVideoPlayer with no success. Posted a question here:
 
 https://forum.openframeworks.cc/t/hls-m3u8-http-live-streaming-video/11927
 
@@ -21,7 +20,7 @@ This seems to be an old and recurrent unsolved problem. See for example these th
 - https://github.com/openframeworks/openFrameworks/issues/4662
 - https://forum.openframeworks.cc/t/ofvideoplayer-load-and-loadmovie-problems-when-streaming/21636/8
 
-There are two paths to test. Using *ofxGStreamer* and using *ofxAvFoundationHLSPlayer*
+There are two paths to test. Using *ofxGStreamer* and using *ofxAvFoundationHLSPlayer*. I was successful using the later. The former is a p;otential path to support other platforms (e.g. windows, and linux).
 
 ### ofxAvFoundationHLSPlayer
 This is the solution I've found!
@@ -40,7 +39,7 @@ ffplay https://manifest.googlevideo.com/api/manifest/hls_playlist/id/6Te20A6b1Ac
 ### Untested or not working
 These are the alternatives I've considered to test. Some of them are untested. Some others I've faced problems.
 
-####ofxGStreamer
+#### ofxGStreamer
 It seems that some videos libs [ofGStreamer](https://github.com/arturoc/ofxGStreamer) might be able to handle this. See:
 
 https://github.com/openframeworks/openFrameworks/issues/5308
