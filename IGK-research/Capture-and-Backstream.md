@@ -9,7 +9,7 @@ Youtube > ofxAvFoundationHLSPlayer > oF > ofxSyphon & Soundflower > Open broadca
 ```
 
 The result is available in:
-[![VIDEO1](screenshot)](https://www.youtube.com/watch?v=6U-RkUvGAas "VIDEO1")
+[![VIDEO1](screenshot.png)](https://www.youtube.com/watch?v=6U-RkUvGAas "VIDEO1")
 
 The research explaining what I've tested to get to this result is presented below.
 
