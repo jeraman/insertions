@@ -3,8 +3,18 @@ Here, I cover research on:
 1. **Efficient capturing**: How to efficiently capture a TV video and manipulate it via code?
 2. **Efficient backstream**: How to efficiently stream the manipulated video back to the internet/Raspberry PI?
 
+In the end, I was able to get good video and audio quality in oF OS X. The full pipeline is:
+```
+Youtube > ofxAvFoundationHLSPlayer > oF > ofxSyphon & Soundflower > Open broadcast software > Youtube
+```
+
+The result is available in:
+[![VIDEO1](screenshot)](https://www.youtube.com/watch?v=6U-RkUvGAas "VIDEO1")
+
+The research explaining what I've tested to get to this result is presented below.
+
 ## Efficient capturing
-We need to be able to capture [m3u](https://en.wikipedia.org/wiki/M3U) files used by [HLS](https://tools.ietf.org/html/draft-pantos-http-live-streaming-20) and import it as a regular video into code. M3u is used both by youtube live and by Suntek's streamserver. Apple's [AvFoundation](https://en.wikipedia.org/wiki/AVFoundation) is able to play m3u8 files.
+We need to be able to capture [m3u](https://en.wikipedia.org/wiki/M3U) files used by [HLS](https://tools.ietf.org/html/draft-pantos-http-live-streaming-20) and import it as a regular video into code. M3u is used both by youtube live and by Suntek's streamserver. Apple's [AvFoundation](https://en.wikipedia.org/wiki/AVFoundation) seems able to play m3u8 files.
 
 A m3u sample file (that you can also open in VLC or Quicktime):
 ```
@@ -20,7 +30,7 @@ This seems to be an old and recurrent unsolved problem. See for example these th
 - https://github.com/openframeworks/openFrameworks/issues/4662
 - https://forum.openframeworks.cc/t/ofvideoplayer-load-and-loadmovie-problems-when-streaming/21636/8
 
-There are two paths to test. Using *ofxGStreamer* and using *ofxAvFoundationHLSPlayer*. I was successful using the later. The former is a p;otential path to support other platforms (e.g. windows, and linux).
+There are two paths to test. Using *ofxGStreamer* and using *ofxAvFoundationHLSPlayer*. I was successful using the later. The former is a potential path to support other platforms (e.g. windows, and linux).
 
 ### ofxAvFoundationHLSPlayer
 This is the solution I've found!
@@ -37,20 +47,18 @@ ffplay https://manifest.googlevideo.com/api/manifest/hls_playlist/id/6Te20A6b1Ac
 ```
 
 ### Untested or not working
-These are the alternatives I've considered to test. Some of them are untested. Some others I've faced problems.
+These are the alternatives I've considered to test. Some of them remais untested. Some others I've faced problems.
 
-#### ofxGStreamer
+#### ofxVideoPipe
+Remains untested. This alternative relates to create a pipe via ffmpeg directly to openframeworks. Maybe this addon could help on this:
+https://github.com/heisters/ofxVideoPipe
+
+#### [PROBLEM] ofxGStreamer
 It seems that some videos libs [ofGStreamer](https://github.com/arturoc/ofxGStreamer) might be able to handle this. See:
 
 https://github.com/openframeworks/openFrameworks/issues/5308
 
-Decided to give it a try! But... Zut! Problems to run the example so far! Stuck in this error here:
-
-https://forum.openframeworks.cc/t/ofaxisgrab-gst-gst-h-error-with-maverick-of-v8/14273/5
-
-#### ofxVideoPipe
-Another alternative would be to create a pipe via ffmpeg directly to openframeworks. Maybe this lib could help on this:
-https://github.com/heisters/ofxVideoPipe
+After [Arturo's help](https://forum.openframeworks.cc/t/playback-from-an-rtsp-stream-of-0-9-8-windows-64bit/25326/9), I was able to compile the library. However, loading m3u8 did not work for me. To be tested in other operating systems.
 
 #### [PROBLEM] Baldtrump
 Ben Snell used the black magic device for the capture. His result was awesome!
@@ -114,13 +122,58 @@ These options are so far outdated:
 - https://github.com/arturoc/ofxGSTRTP
 -->
 
-## Efficient backstream
-### FFmpeg screen capture
-So far, this approach is working fine! Seems reliable and multiplatform!
 
-### Baldtrump
+## Efficient backstream
+We need to be able to capture the video processed inside oF and stream it back either to Youtube Live or an Raspberry pi.
+
+#### Syphon + OBS + Soundflower
+This is the best solution I have so far. Unfortunately, it's OS X only... :(
+
+The combination [Syphon](http://www.syphon.v002.info/) + [OBS](http://obsproject.com/) + [Soundflower](https://soundflower.en.softonic.com/mac) seems versatile inside OS X and allows the stream to be sent to Youtube Live, RTPS (e.g. Raspberry pi), Facebook live, etc. Syphon is brought to oF via [ofxSyphon](https://github.com/astellato/ofxSyphon). Seems costly and heavy, but is actually the one that worked better.
+
+The idea is similar to Ben Snell's approach and is roughly described in this link:
+
+http://doktor-andy.de/wordpress/?p=1768
+
+### Untested or not working
+These are the alternatives I've considered to test. Some of them are untested. Some others I've faced problems.
+
+#### FFmpeg
+It's always possible to use FFmpeg screen capture to do the job. This was the approach was the one I was using before, and seems reliable and multiplatform. For example:
+
+To stream for a local raspberry pi, all you need is:
+```
+ffmpeg -f avfoundation -pixel_format yuv420p -r 30 -i "1:1" -vcodec libx264 -preset veryfast -tune zerolatency -bsf:v h264_mp4toannexb -b:v 5000k -bufsize 500k -f mpegts udp://RASPBERRY_IP_:8888
+```
+
+To file:
+```
+ffmpeg -f avfoundation -r 30 -i "1:1" -acodec libmp3lame -ar 44100 -b:a 128k -vcodec libx264 -preset veryfast -s 1280x720 -tune zerolatency -bsf:v h264_mp4toannexb -b:v 5000k -bufsize 400k out.mp4
+```
+
+To Youtube live:
+```
+ffmpeg -f avfoundation -r 30 -i "1:1" -acodec libmp3lame -ar 44100 -b:a 128k -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -preset ultrafast -s 1280x720 -bsf:v h264_mp4toannexb -b:v 5000k -bufsize 400k -f flv rtmp://a.rtmp.youtube.com/live2/ID
+```
+
+If you want to have more info on effective enconding for streaming in FFmpeg, check [here](https://trac.ffmpeg.org/wiki/Encode/H.264) and [here](https://trac.ffmpeg.org/wiki/Capture/Desktop).
+
+However, in OS X, I'm struggling with two problems:
+
+1. Reaching good audiovisual quality; and
+
+2. Grabbing screen coordinates (something similar to what x11grab does on Linux).
+
+#### [PROBLEM] ofxGStreamer
+It seems that some videos libs [ofGStreamer](https://github.com/arturoc/ofxGStreamer) might be able to handle this.
+
+This solution would be ideal because it could potentially allow capture and backstream.
+
+After a while I was able to install this. However, it didn't work as expected. Doesn't seem capable to stream content to youtube.
+
+### [PROBLEM] Baldtrump
 Ben Snell used Syphon to stream from the manipulated video from oF to youtube. The result was again awesome!
 
-Apparently, it is possible to integrate syphon with ffmpeg:
+https://github.com/bensnell/samson
 
-http://v002.info/forums/topic/syphon-piped-to-ffmpeg/
+The problem this case is that Syphon works only in OSX... :(
