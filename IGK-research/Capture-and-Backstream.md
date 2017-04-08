@@ -4,11 +4,13 @@ Here, I cover research on:
 2. **Efficient backstream**: How to efficiently stream the manipulated video back to the internet/Raspberry PI?
 
 In the end, I was able to get good video and audio quality in oF OS X. The full pipeline is:
+
 ```
-Youtube > ofxAvFoundationHLSPlayer > oF > ofxSyphon & Soundflower > Open broadcast software > Youtube
+Input stream > ofxAvFoundationHLSPlayer > oF > ofxSyphon & Soundflower > Open broadcast software > Output stream
 ```
 
 The result is available in:
+
 [![VIDEO1](screenshot.png)](https://www.youtube.com/watch?v=6U-RkUvGAas "VIDEO1")
 
 The research explaining what I've tested to get to this result is presented below.
@@ -171,7 +173,7 @@ This solution would be ideal because it could potentially allow capture and back
 
 After a while I was able to install this. However, it didn't work as expected. Doesn't seem capable to stream content to youtube.
 
-### [PROBLEM] Baldtrump
+#### [PROBLEM] Baldtrump
 Ben Snell used Syphon to stream from the manipulated video from oF to youtube. The result was again awesome!
 
 https://github.com/bensnell/samson
