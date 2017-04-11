@@ -79,7 +79,7 @@ If everything is fine, you should be able to see the green volume line moving in
 ![configuring-audio](assets/configuring-audio.png)
 
 ### Basic overlaying!
-------
+--------
 
 It's time to make some modifications in our video!
 
