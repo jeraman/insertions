@@ -69,9 +69,9 @@ To import your audio inside OBS you'll need to:
 
 Don't forget to set your speakers as default when you're done!
 
-By them you should notice that you can (should?) no longer hear your speakers. Everything now is being routed by default to Soundflower. This allows you to import the routed audio inside external applications as if your speakers were a microphone. Actually, this is exactly what we are going to do inside OBS by:
+By them you should notice that you can (should?) no longer hear your speakers. Everything now is being routed by default to Soundflower. This allows you to import the routed audio inside external applications as if your speakers were a microphone. Actually, this is exactly what want to do inside OBS by:
 
-3. Clicking on *Desktop Audio settings* (i.e. the wheels) > *properties;*
+3. Clicking on *Desktop Audio settings* (i.e. the wheels) > *Properties;*
 4. Choose *Soundflower (2ch)* as device.
 
 If everything is fine, you should be able to see the green volume line moving in your Desktop Audio options. You should also make sure the Mix/Aux is properly muted. As follows:
@@ -81,11 +81,13 @@ If everything is fine, you should be able to see the green volume line moving in
 ### Basic overlaying!
 It's time to make some modifications in our video!
 
-We won't cover this substep in details. As we already said, the more familiar you are with OBS, the more sophisticated are the insertions you can do with it.
+We won't cover this substep in details, we leave this to you. As we already said, the more familiar you are with OBS, the more sophisticated are the insertions you can do with it.
 
-All you need however is go to *"Sources"*, and then click in *"+"* (as done before). Each options you see offer some new element you can add to the video. For instance, "Image" allows you to overlay multiple images. Media source allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advance, you can also explore Scenes, that gives you the possibility of transitions between different insertions (e.g. you might want an overlay to disappear, when it's commercial time).
+In summary: all you can do is available by clicking on  *"Sources"*, and then on *"+"*. As follows:
 
 ![obs-part-1](assets/obs-part-1.png)
+
+Each options you see offer some element you can add to the video. For instance, **Image** allows you to overlay multiple images. **Media source** allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advance, you might want to explore the **Scenes**, that gives you the possibility of transitions between different setups (e.g. you might want an overlay to disappear, when it's commercial time).
 
 ## Step 3: From your computer to the internet
 Finally, you need to configure OBS to stream your inserted video to the target stream service (e.g. Youtube Live, Facebook like, etc).
