@@ -42,6 +42,9 @@ At any time, you can change the target video by modifying the "video.txt" and by
 If you're having problems, make sure you have picked a valid video, and that its link is correctly pasted into the "video.txt" file.
 
 ## Step 2: Modify it!
+For this step, you'll need to configure both *video* and *audio*.
+
+### Configuring video
 Now, it's time to modify the video!
 
 For that, we are going to use the Open-broadcast software (OBS). A full tutorial is beyond the scope of this tutorial, you can find [several on youtube](https://www.youtube.com/watch?v=LX04mw_xG6A). It's enough to say here that it is: **open source** (i.e. free, and community driven), **powerful** (i.e. allows you to easily add images, sound, and other things to your video), and really **easy to use** (you can learn how to use only by trying it out).
@@ -50,26 +53,24 @@ This is how OBS should look like:
 
 ![obs-part-0](assets/obs-part-0.png)
 
-For this step, you'll need to configure both *video* and *audio*.
-
-### Configuring video
-To import your video inside OBS you'll need to:
-1. Go to *"Sources"*, and click in *"+"*;
+To import your video inside OBS you'll need first to go to *"Sources"*, and click in *"+"*:
 
 ![obs-part-1](assets/obs-part-1.png)
 
-2. Click on *"Game Capture Syphon"*, and then on *"Create new"*;
+Then, click on *"Game Capture Syphon"*, and then on *"Create new"*:
 
 ![obs-part-2](assets/obs-part-2.png)
 
-3. Go in *"Source"* and choose *"[webInsertion] Insertion output"*. It's **essential** that the webInsertion app is up and running by them (see Step 1 if it's not);
+Go in *"Source"* and choose *"[webInsertion] Insertion output"*. It's **essential** that the webInsertion app is up and running by them (see Step 1 if it's not):
 
 ![obs-part-3](assets/obs-part-3.png)
 
-4. By now, you should be seeing the video output inside OBS. That's great! You only need to adjust the size according to the output window provided by OBS.
+By now, you should be seeing the video output inside OBS. That's great! You only need to adjust the size according to the output window provided by OBS.
 
 ![obs-part-4](assets/obs-part-4.png)
 
+### Configuring audio
+To import your audio inside OBS you'll need first to go to *"Sources"*, and click in *"+"*:
 
 ### Only for developers
 If you're confortable, you can play around with the video before sending it to OBS. Whenever you're draw in the screen before the call *"mainOutputSyphonServer.publishScreen()"* is going to get sent to OBS. Thus, for example:
