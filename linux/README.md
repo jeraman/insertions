@@ -59,7 +59,7 @@ Before running this command, make sure Jack is up and running!
 ## Process
 The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on Pd (picture (b)), and then stream it back to youtube (picture (c)).
 
-![Setup] (setup.png)
+![Setup](setup.png)
 
 ## Step 1
 In the beginning, you need to choose the Youtube live stream video you want to target. This video is represented in the picture above by (a). You only need to copy the URL of the target video.
@@ -85,4 +85,5 @@ That's it! By now you should have the modified video streamed back to youtube—
 Have fun!
 
 --
+
 [Jeraman](https://jeraman.info), 2016.
