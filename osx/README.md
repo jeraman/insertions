@@ -26,7 +26,7 @@ When you're done, you can open the webInsertion software you just downloaded. If
 
 ![Screenshot](assets/webInsertion-screenshot.png)
 
-At any time, you can change the target video by modifying the "video.txt" and by clicking on "reload URL from file" inside the application.
+At any time, you can change the target video by modifying the "video.txt" and by clicking on "reload URL from file" inside the application. You can hide the debug info by unselecting "Show debug info".
 
 If you're having problems, make sure you have picked a valid video, and that its link is correctly pasted into the "video.txt" file.
 
@@ -79,7 +79,6 @@ If everything is fine, you should be able to see the green volume line moving in
 ![configuring-audio](assets/configuring-audio.png)
 
 ### Basic overlaying!
---------
 
 It's time to make some modifications in our video!
 
@@ -87,15 +86,19 @@ We won't cover this substep in details, we leave this to you. As we already said
 
 In summary: all you can do is available by clicking on  *"Sources"*, and then on *"+"*. As follows:
 
-![obs-part-1](assets/obs-part-1.png)
+![obs-part-1](assets/obs-fake-news.png)
 
-Each options you see offer some element you can add to the video. For instance, **Image** allows you to overlay multiple images. **Media source** allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advanced, you might want to explore the **Scenes**, that gives you the possibility of transitions between different setups (e.g. when it's commercial time, you might want an overlay to disappear).
+Each options you see offer some element you can add to the video. For instance, **Image** allows you to overlay multiple images (as in the image above). **Media source** allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advanced, you might want to explore the **Scenes**, that gives you the possibility of transitions between different setups (e.g. when it's commercial time, you might want an overlay to disappear).
 
 ## Step 3: From your computer to the internet
-Finally, you need to configure OBS to stream your inserted video to the target stream service (e.g. Youtube Live, Facebook like, etc).
+Finally, you need to configure OBS to stream your inserted video to the target stream service (e.g. Youtube Live, Facebook like, etc). You can do this by:
 
 
-# Advanced insertions (only for developers)
+
+Thats it!
+
+
+# Advanced insertions (for developers)
 If you are familiar with C++/Openframeworks, you can play around with the video before sending it to OBS by modifying the source code. This gives you the possibility of doing things way more complex and sophisticated than basic overlaying.
 
 In this case, you'll also need as dependencies:
