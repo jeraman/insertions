@@ -7,6 +7,7 @@ To start, we need to install the following software:
 - [webInsertion software](https://www.dropbox.com/sh/iiwf8gqqzjp75fn/AAB8OtNXv44U7p0Vcwti85aOa?dl=0): Software that allows you to modify the incoming video using a friendly programming languages, as if it was a webcam. Make sure you download the right version for you platform (i.e. 32 or 64 bits). In addition, because this software is not Apple certified, there’s a chance you might have a security-related problem (*"this application is damaged and cannot be opened"* or something like that). In this case, follow [this link](http://osxdaily.com/2016/09/27/allow-apps-from-anywhere-macos-gatekeeper/) to solve the problem;
 - [Youtube-dl](https://github.com/rg3/youtube-dl/): Command line tool that allows you to extract an m3u8 file from several resources, such as Youtube Live and others;
 - [Open-broadcast software](https://obsproject.com/): Software tool that allows you to broadcast videos to several services such as Youtube and Facebook Live;
+- [Soundflower](https://soundflower.en.softonic.com/mac): Software tool that allows you to route whatever you're hearing in your speakers as a "virtual michrophone" to feed external software.
 
 ### Only for developers
 If you are familiar with C++/Openframeworks, and want to modify the source-code by yourself, you're also going to need:
@@ -26,11 +27,13 @@ The image below summarizes the process. After selecting your video target (pictu
 ![Setup](assets/setup.png)
 
 ## Step 1
-In the beginning, you need to choose the live video stream you want to target. This video is represented in the picture above by (a).
+In the beginning, you need to choose the live video stream you want to target. This video is represented in the picture above by (a). For example, you can go to the [Youtube Live](https://www.youtube.com/live), open the video you want to modify, and copy its URL.
 
-For this, you only need to copy the URL and paste it in a text file called "video.txt", inside the folder "data" (this folder comes along with the webInsertion software you downloaded).
+Once you copied this URL, you only need paste it inside a text file called "video.txt". This file is placed inside the folder "data" that comes along with the webInsertion software you downloaded. As follows:
 
-When you're done, you can open the webInsertion software you just downloaded.
+![Screenshot](assets/modify-video-txt.png)
+
+When you're done, you can open the webInsertion software you just downloaded. If you see the video playing, everything should be OK!
 
 ![Screenshot](assets/webInsertion-screenshot.png)
 
