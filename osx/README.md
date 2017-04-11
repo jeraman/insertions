@@ -11,7 +11,7 @@ To start, we need to install the following software:
 
 
 ## Process
-The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on openFrameworks and OBS (picture (b)). The result is going to be streamed back to whatever service you'd like, such as the youtube (picture (c)).
+The image below summarizes the process. After selecting your video target (**step 1**, picture (a)), you will process it locally on openFrameworks and OBS (**step 2**, picture (b)). The result is going to be streamed back to whatever service you'd like, such as the youtube (**step 3**, picture (c)).
 
 ![Setup](assets/setup.png)
 
@@ -67,7 +67,7 @@ To import your audio inside OBS you'll need to:
 1. Go to *System preferences* > *Sound* > *Output*;
 2. Select Soundflower as default output.
 
-Don't forget to return there when you're done to enable your speakers again!
+Don't forget to set your speakers as default when you're done!
 
 By them you should notice that you can (should?) no longer hear your speakers. Everything now is being routed by default to Soundflower. This allows you to import the routed audio inside external applications as if your speakers were a microphone. Actually, this is exactly what we are going to do inside OBS by:
 
@@ -79,18 +79,27 @@ If everything is fine, you should be able to see the green volume line moving in
 ![configuring-audio](assets/configuring-audio.png)
 
 ### Basic overlaying!
-Finally, it's time to make some modifications in our video!
+It's time to make some modifications in our video!
+
+We won't cover this substep in details. As we already said, the more familiar you are with OBS, the more sophisticated are the insertions you can do with it.
+
+All you need however is go to *"Sources"*, and then click in *"+"* (as done before). Each options you see offer some new element you can add to the video. For instance, "Image" allows you to overlay multiple images. Media source allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advance, you can also explore Scenes, that gives you the possibility of transitions between different insertions (e.g. you might want an overlay to disappear, when it's commercial time).
+
+![obs-part-1](assets/obs-part-1.png)
+
+## Step 3: From your computer to the internet
+Finally, you need to configure OBS to stream your inserted video to the target stream service (e.g. Youtube Live, Facebook like, etc).
 
 
 # Advanced insertions (only for developers)
-If you are familiar with C++/Openframeworks, you can play around with the video before sending it to OBS. This gives you the possibility of doing things way more complex and sophisticated than basic overlaying.
+If you are familiar with C++/Openframeworks, you can play around with the video before sending it to OBS by modifying the source code. This gives you the possibility of doing things way more complex and sophisticated than basic overlaying.
 
-For this, you'll need to modify the source code by yourself. Therefore, you're also going to need as dependencies:
+In this case, you'll also need as dependencies:
 - openFrameworks ([version 0.9.8](http://openframeworks.cc/download/));
 - xCode (get started on using xCode with openFrameworks [here](http://openframeworks.cc/setup/xcode/));
 - The [webInsertion's source](https://github.com/jeraman/insertions/tree/master/osx/webInsertion).
 
-...and install the following oF addons:
+You'll also need to install the following oF addons:
 - https://github.com/jvcleave/ofxAvFoundationHLSPlayer
 - https://github.com/astellato/ofxSyphon
 
@@ -108,7 +117,7 @@ ofDrawCircle(150,150,100);
 ```
 The circle *won't* be sent to OBS.
 
-Have fun!
+Have fun! And don't forget to share your results around here! ;)
 
 --
 
