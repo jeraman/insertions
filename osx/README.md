@@ -8,18 +8,19 @@ To start, we need to install the following software:
 - [Youtube-dl](https://github.com/rg3/youtube-dl/): Command line tool that allows you to extract an m3u8 file from several resources, such as Youtube Live and others;
 - [Open-broadcast software](https://obsproject.com/): Software tool that allows you to broadcast videos to several services such as Youtube and Facebook Live;
 
-### For developers
+### Only for developers
 If you are familiar with C++/Openframeworks, and want to modify the source-code by yourself, you're also going to need:
-- openFrameworks (version 0.9.8, available [here](http://openframeworks.cc/download/));
+- openFrameworks ([version 0.9.8](http://openframeworks.cc/download/));
 - xCode (get started on using xCode with openFrameworks [here](http://openframeworks.cc/setup/xcode/));
-...and the following oF addons:
+
+...and install the following oF addons:
 - https://github.com/jvcleave/ofxAvFoundationHLSPlayer
 - https://github.com/astellato/ofxSyphon
 
 If you're not a developer, nevermind. Just skip this step and go directly to the following subsection.
 
 ## Process
-The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on Pd (picture (b)), and then stream it back to youtube (picture (c)).
+The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on openframwroks and Obs (picture (b)), and then stream it back to whatever service you'd like, such as the youtube (picture (c)).
 
 ![Setup](setup.png)
 
