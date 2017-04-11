@@ -79,6 +79,8 @@ If everything is fine, you should be able to see the green volume line moving in
 ![configuring-audio](assets/configuring-audio.png)
 
 ### Basic overlaying!
+------
+
 It's time to make some modifications in our video!
 
 We won't cover this substep in details, we leave this to you. As we already said, the more familiar you are with OBS, the more sophisticated are the insertions you can do with it.
@@ -87,7 +89,7 @@ In summary: all you can do is available by clicking on  *"Sources"*, and then on
 
 ![obs-part-1](assets/obs-part-1.png)
 
-Each options you see offer some element you can add to the video. For instance, **Image** allows you to overlay multiple images. **Media source** allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advance, you might want to explore the **Scenes**, that gives you the possibility of transitions between different setups (e.g. you might want an overlay to disappear, when it's commercial time).
+Each options you see offer some element you can add to the video. For instance, **Image** allows you to overlay multiple images. **Media source** allows you to overlay another video, or yet an audio file to the stream. And so on. Take your time to explore these possibilities. If you want to go advanced, you might want to explore the **Scenes**, that gives you the possibility of transitions between different setups (e.g. when it's commercial time, you might want an overlay to disappear).
 
 ## Step 3: From your computer to the internet
 Finally, you need to configure OBS to stream your inserted video to the target stream service (e.g. Youtube Live, Facebook like, etc).
