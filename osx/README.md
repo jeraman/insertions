@@ -9,17 +9,6 @@ To start, we need to install the following software:
 - [Open-broadcast software (OBS)](https://obsproject.com/): Software tool that allows you to broadcast videos to several services such as Youtube and Facebook Live;
 - [Soundflower](https://soundflower.en.softonic.com/mac): Software tool that allows you to route whatever you're hearing in your speakers as a "virtual michrophone" to feed external software.
 
-### Only for developers
-If you are familiar with C++/Openframeworks, and want to modify the source-code by yourself, you're also going to need:
-- openFrameworks ([version 0.9.8](http://openframeworks.cc/download/));
-- xCode (get started on using xCode with openFrameworks [here](http://openframeworks.cc/setup/xcode/));
-- The [webInsertion's source](https://github.com/jeraman/insertions/tree/master/osx/webInsertion).
-
-...and install the following oF addons:
-- https://github.com/jvcleave/ofxAvFoundationHLSPlayer
-- https://github.com/astellato/ofxSyphon
-
-If you're not a developer, nevermind. Just skip this step and go directly to the following subsection.
 
 ## Process
 The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on openFrameworks and OBS (picture (b)). The result is going to be streamed back to whatever service you'd like, such as the youtube (picture (c)).
@@ -74,10 +63,14 @@ By now, you should be seeing the video output inside OBS. That's great! You only
 
 ### Configuring audio
 To import your audio inside OBS you'll need to:
+
 1. Go to *System preferences* > *Sound* > *Output*;
 2. Select Soundflower as default output.
 
+Don't forget to return there when you're done to enable your speakers again!
+
 By them you should notice that you can (should?) no longer hear your speakers. Everything now is being routed by default to Soundflower. This allows you to import the routed audio inside external applications as if your speakers were a microphone. Actually, this is exactly what we are going to do inside OBS by:
+
 3. Clicking on *Desktop Audio settings* (i.e. the wheels) > *properties;*
 4. Choose *Soundflower (2ch)* as device.
 
@@ -85,15 +78,23 @@ If everything is fine, you should be able to see the green volume line moving in
 
 ![configuring-audio](assets/configuring-audio.png)
 
-
 ### Basic overlaying!
 Finally, it's time to make some modifications in our video!
 
 
 # Advanced insertions (only for developers)
-If you're comfortable, you can play around with the video before sending it to OBS. This gives you the possibility of doing things more complex than basic overlaying.
+If you are familiar with C++/Openframeworks, you can play around with the video before sending it to OBS. This gives you the possibility of doing things way more complex and sophisticated than basic overlaying.
 
-The major thing to keep in mind in this case is that whatever you draw in the screen before the command *"mainOutputSyphonServer.publishScreen()"* is going to get sent to OBS. Thus, for example:
+For this, you'll need to modify the source code by yourself. Therefore, you're also going to need as dependencies:
+- openFrameworks ([version 0.9.8](http://openframeworks.cc/download/));
+- xCode (get started on using xCode with openFrameworks [here](http://openframeworks.cc/setup/xcode/));
+- The [webInsertion's source](https://github.com/jeraman/insertions/tree/master/osx/webInsertion).
+
+...and install the following oF addons:
+- https://github.com/jvcleave/ofxAvFoundationHLSPlayer
+- https://github.com/astellato/ofxSyphon
+
+A major thing here to keep in mind is that whatever you draw in the screen before the command *"mainOutputSyphonServer.publishScreen()"* is going to get sent to OBS. Thus, for example:
 
 ```cpp
 ofDrawCircle(150,150,100);
