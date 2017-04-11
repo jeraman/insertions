@@ -22,7 +22,7 @@ If you are familiar with C++/Openframeworks, and want to modify the source-code 
 If you're not a developer, nevermind. Just skip this step and go directly to the following subsection.
 
 ## Process
-The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on openFrameworks and Obs (picture (b)). The result is going to be streamed back to whatever service you'd like, such as the youtube (picture (c)).
+The image below summarizes the process. After selecting your video target (picture (a)), you will process it locally on openFrameworks and OBS (picture (b)). The result is going to be streamed back to whatever service you'd like, such as the youtube (picture (c)).
 
 ![Setup](assets/setup.png)
 
@@ -42,12 +42,15 @@ At any time, you can change the target video by modifying the "video.txt" and by
 If you're having problems, make sure you have picked a valid video, and that its link is correctly pasted into the "video.txt" file.
 
 ## Step 2: Modify it!
-For this step, you'll need to configure both *video* and *audio*.
+For this step, you'll need first to configure both *video* and *audio*. Then, you will be able to insert basic media on the video such as overlaying images and sound. This step is represented by picture (b).
 
 ### Configuring video
-Now, it's time to modify the video!
+Here, we are going to use the Open-broadcast software (OBS). A full explanation of OBS is beyond the scope of this tutorial, you can find [several on youtube](https://www.youtube.com/watch?v=LX04mw_xG6A). It's enough to say here that it is:
+1. **Open source** (i.e. free, and community driven);
+2. **Powerful** (i.e. allows you to easily add images, sound, and other things to your video); and
+3. **Easy to use** (you can learn how to use only by trying it out).
 
-For that, we are going to use the Open-broadcast software (OBS). A full tutorial is beyond the scope of this tutorial, you can find [several on youtube](https://www.youtube.com/watch?v=LX04mw_xG6A). It's enough to say here that it is: **open source** (i.e. free, and community driven), **powerful** (i.e. allows you to easily add images, sound, and other things to your video), and really **easy to use** (you can learn how to use only by trying it out).
+Roughly, the more familiar you are with it, the more sophisticated are the insertions you can do with it. In this tutorial, we'll stick to very the basics.
 
 This is how OBS should look like:
 
@@ -61,7 +64,7 @@ Then, click on *"Game Capture Syphon"*, and then on *"Create new"*:
 
 ![obs-part-2](assets/obs-part-2.png)
 
-Go in *"Source"* and choose *"[webInsertion] Insertion output"*. It's **essential** that the webInsertion app is up and running by them (see Step 1 if it's not):
+Go in *"Source"* and choose *"[webInsertion] Insertion output"*. It's **essential** that the webInsertion app is up and running before this options is available to you (see Step 1 if it's not):
 
 ![obs-part-3](assets/obs-part-3.png)
 
@@ -70,18 +73,42 @@ By now, you should be seeing the video output inside OBS. That's great! You only
 ![obs-part-4](assets/obs-part-4.png)
 
 ### Configuring audio
-To import your audio inside OBS you'll need first to go to *"Sources"*, and click in *"+"*:
+To import your audio inside OBS you'll need to:
+1. Go to *System preferences* > *Sound* > *Output*;
+2. Select Soundflower as default output.
 
-### Only for developers
-If you're confortable, you can play around with the video before sending it to OBS. Whenever you're draw in the screen before the call *"mainOutputSyphonServer.publishScreen()"* is going to get sent to OBS. Thus, for example:
+By them you should notice that you can (should?) no longer hear your speakers. Everything now is being routed by default to Soundflower. This allows you to import the routed audio inside external applications as if your speakers were a microphone. Actually, this is exactly what we are going to do inside OBS by:
+3. Clicking on *Desktop Audio settings* (i.e. the wheels) > *properties;*
+4. Choose *Soundflower (2ch)* as device.
+
+If everything is fine, you should be able to see the green volume line moving in your Desktop Audio options. You should also make sure the Mix/Aux is properly muted. As follows:
+
+![configuring-audio](assets/configuring-audio.png)
+
+
+### Basic overlaying!
+Finally, it's time to make some modifications in our video!
+
+
+# Advanced insertions (only for developers)
+If you're comfortable, you can play around with the video before sending it to OBS. This gives you the possibility of doing things more complex than basic overlaying.
+
+The major thing to keep in mind in this case is that whatever you draw in the screen before the command *"mainOutputSyphonServer.publishScreen()"* is going to get sent to OBS. Thus, for example:
 
 ```cpp
 ofDrawCircle(150,150,100);
 mainOutputSyphonServer.publishScreen();
 ```
-In this first case, the circle will first be drawn in the screen that will be then sent to the Syphon stream. However, in the next example, the screen is sent to to Syphon first, and only later the circle  is drawn on the screen (i.e. the video in OBS won't contain the circle).
+In this first case, the circle *will* be sent to OBS. However, here:
 
 ```cpp
 mainOutputSyphonServer.publishScreen();
 ofDrawCircle(150,150,100);
 ```
+The circle *won't* be sent to OBS.
+
+Have fun!
+
+--
+
+[Jeraman](https://jeraman.info), 2017.
