@@ -106,7 +106,7 @@ This window will give you the options available for outputing your insertion, as
 
 Again, we won't go in details here. Each service uses its own way to authenticate the stream. After choosing yours (e.g. Facebook Live), you need to google for the details. As an example, in the particular case of choosing the Youtube, you just need to select "Youtube" as service, and update the individual stream key provided to you in your [Youtube Live page](https://www.youtube.com/live_dashboard).
 
-Thats it!
+Thats it! Now, you just need to click on **start streaming** to start your insertion!
 
 # Advanced insertions (for developers)
 If you are familiar with C++/Openframeworks, you can play around with the video before sending it to OBS by modifying the source code. This gives you the possibility of doing things way more complex and sophisticated than basic overlaying.
