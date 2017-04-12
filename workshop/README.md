@@ -1,6 +1,4 @@
 # Insertions into Mediatic Circuits: a Hands-on Workshop
-"Insertions into Mediatic Circuits" are a series of media interventions (here called insertions) where live media streams are copied, manipulated, and finally put back in circulation in a new live media stream. This new stream is almost identical to the original one, except for the insertion itself. The process—which could be described as "media shopdropping"—is transparent to the media viewer, and happens in almost realtime.
-
 In this workshop, we will give a practical introduction to this framework. In particular, we are going to focus only on live videos circulating on the internet (e.g. Youtube Live, Facebook Live, Periscope.tv, etc).
 
 As concrete outcomes for this workshop, we expected to provide:
@@ -16,7 +14,7 @@ Things to have in mind:
 - The workshop is going to be video documented and this video could be exhibited as part of a potential future exhibition.
 
 ## Introduction
-[Here!](insertion - jeronimo.pdf)
+[Here](presentation.pdf)!
 
 ## Behind the curtains
 I've prepared a small hands-on tutorial on how people could get started in doing insertions.
