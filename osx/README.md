@@ -2,6 +2,10 @@
 # Tutorial
 This system is OS X-only and was tested in a OS X 10.11.6. Let me know if you ever test this in another version/distribution, I'd love to know!
 
+Things to remember before we start:
+- I give no garantees this will work;
+- This tool is intended to be used by activists. Thus, be reasonable on using this! Do not be an idiot using this to offend people!
+
 ## Dependencies
 To start, we need to install the following software:
 - [webInsertion software](https://www.dropbox.com/sh/iiwf8gqqzjp75fn/AAB8OtNXv44U7p0Vcwti85aOa?dl=0): Software that allows you to modify the incoming video using a friendly programming languages, as if it was a webcam. Make sure you download the right version for you platform (i.e. 32 or 64 bits). In addition, because this software is not Apple certified, there’s a chance you might have a security-related problem (*"this application is damaged and cannot be opened"* or something like that). In this case, follow [this link](http://osxdaily.com/2016/09/27/allow-apps-from-anywhere-macos-gatekeeper/) to solve the problem;
@@ -93,7 +97,13 @@ Each options you see offer some element you can add to the video. For instance, 
 ## Step 3: From your computer to the internet
 Finally, you need to configure OBS to stream your inserted video to the target stream service (e.g. Youtube Live, Facebook like, etc). You can do this by:
 
+1. Going to **Settings**;
+2. When the window opens, go to **Stream**;
 
+This window will give you the options available for outputing your insertion, as follows:
+![obs-part-1](assets/obs-stream.png)
+
+Again, we won't go in details here. Each service uses its own way to authenticate your streaming. After choosing yours, you need to google for the details.
 
 Thats it!
 
