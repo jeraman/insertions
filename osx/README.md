@@ -101,9 +101,10 @@ Finally, you need to configure OBS to stream your inserted video to the target s
 2. When the window opens, go to **Stream**;
 
 This window will give you the options available for outputing your insertion, as follows:
+
 ![obs-part-1](assets/obs-stream.png)
 
-Again, we won't go in details here. Each service uses its own way to authenticate your streaming. After choosing yours, you need to google for the details.
+Again, we won't go in details here. Each service uses its own way to authenticate your streaming. After choosing yours, you need to google for the details. In case of youtube, for instance, you just need to select "Youtube" as service, and update the stream key provided in your [Youtube Live page](https://www.youtube.com/live_dashboard).
 
 Thats it!
 
