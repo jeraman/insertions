@@ -58,7 +58,7 @@ This is the procedure we're proposing:
 ## Conclusion
 We are moving towards the DIY Insertion Guerrilla kit:
 - We have the back streaming working via Raspberry Pi and the OBS software;
-- We are capturing live HD signal by using an antenna and an USB Tv Tuner;
+- We are capturing [live HD signal by using an antenna and an USB Tv Tuner](https://www.youtube.com/watch?v=SZCwjdHOPQY&feature=youtu.be);
 - Just ordered an [Ninja Remote 2](ninja-remote.png) to explore possibilities in controlling TVs.
 
 If you would like to collaborate on this, or keep informed about how this goes, let me know! ;)
