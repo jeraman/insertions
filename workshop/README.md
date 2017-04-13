@@ -34,8 +34,7 @@ This is the procedure we're proposing:
 ### Generating ideas - 25 min
 2. Explain: How will we proceed?
 
-  	- [6-3-5 Brainstorm]( https://en.wikipedia.org/wiki/6-3-5_Brainwriting)
-		- We will adapt to a 8-3-4
+  	- Adapted [6-3-5 Brainstorm]( https://en.wikipedia.org/wiki/6-3-5_Brainwriting). Maybe a 8-3-4?
 
 3. Follow the technique!
 
@@ -45,12 +44,12 @@ This is the procedure we're proposing:
 5. Read them ideas you have and select the two you personally like the best;
 
 6. Time to choose! What are the requirements to select the final approach?
-  - Needs to be feasible to implement during this workshop (eliminate the ones that seem hard to implement within the time frame we have);
-  - Keep it simple!
+    - Needs to be feasible to implement during this workshop (eliminate the ones that seem hard to implement within the time frame we have);
+    - Keep it simple!
 
 7. Discussion & Voting!
-  - Give voice to dissent;
-	- Give people the freedom to do their own individual insertion if they want to (just follow the tutorials and I’ll try to help as I can);
+    - Give voice to dissent;
+	  - Give people the freedom to do their own individual insertion if they want to (just follow the tutorials and I’ll try to help as I can);
 
 ### Making ideas concrete - 1h 20 min
 8. List things we need to do and find volunteers to do each of these required items;
