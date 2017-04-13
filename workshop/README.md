@@ -49,7 +49,7 @@ This is the procedure we're proposing:
 
 7. Discussion & Voting!
     - Give voice to dissent;
-	  - Give people the freedom to do their own individual insertion if they want to (just follow the tutorials and I’ll try to help as I can);
+    - Give people the freedom to do their own individual insertion if they want to (just follow the tutorials and I’ll try to help as I can);
 
 ### Making ideas concrete - 1h 20 min
 8. List things we need to do and find volunteers to do each of these required items;
