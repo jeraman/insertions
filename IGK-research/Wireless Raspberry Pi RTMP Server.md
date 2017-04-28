@@ -1,12 +1,12 @@
 # Wireless Raspberry Pi RTMP server
-These are the steps I've followed to set up the wireless RTMP server for the Raspberry Pi (RPi). This server allows us to receive video streams from the OBS server inside an small autonomous RPi. As follows:
+These are the steps I've followed to set up the wireless RTMP server for the Raspberry Pi (RPi). This server allows us to receive video streams from the OBS server inside a small autonomous RPi. As follows:
 
 [![VIDEO1](wireless-rpi-rtmp.png)](https://www.youtube.com/watch?v=zVjokllyfbM&feature=youtu.be "VIDEO1")
 
 ## SSHing the Raspberry Pi
-First we need to be able to use the RPi.
+First we need to be able to use the RPi via command line.
 
-In case you don't have neither keyboard, mouse, nor monitor, that's what you'll need:
+Because I didn't have a keyboard, mouse, nor monitor, I needed to use SSH via the network. If you want to do the same, that's what you'll need:
 1. Plug it via ethernet cable to the router;
 2. Access the router configuration and grab the raspberry p ip on the network (you can always use `arp -a` or `arp-scan` instead);
 3. Use SSH to connect to the raspberry pi by:
@@ -19,9 +19,9 @@ ssh pi@192.168.2.24
 For a complete guide on this, check [this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md).
 
 ## Configuring the wifi
-Second thing, we need to configure the RPi and the wifi adaptor (I use something similar to [this one](http://www.gearbest.com/raspberry-pi/pp_413677.html?currency=CAD&vip=989008&gclid=CLf9j-O6x9MCFUm2wAodf1IEGg)) to our local network.
+Second thing, we want the video stream to go to the RPi via wireless network. For this, we need to setup a wifi adaptor (I use something similar to [this one](http://www.gearbest.com/raspberry-pi/pp_413677.html?currency=CAD&vip=989008&gclid=CLf9j-O6x9MCFUm2wAodf1IEGg)) in our RPi, and configure it in our local network. Thus:
 
-1. For scanning networks, you'll need:
+1. For scanning available networks, you'll need:
 ```
 sudo iwlist wlan0 scan
 ```
