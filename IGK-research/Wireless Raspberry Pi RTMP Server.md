@@ -1,5 +1,7 @@
 # Wireless Raspberry Pi RTMP server
-These are the steps I've followed to set up the wireless RTMP server for the Raspberry Pi (RPi). This server allows us to receive video streams from the OBS server inside the RPi.
+These are the steps I've followed to set up the wireless RTMP server for the Raspberry Pi (RPi). This server allows us to receive video streams from the OBS server inside an small autonomous RPi. As follows:
+
+[![VIDEO1](wireless-rpi-rtmp.png)](https://www.youtube.com/watch?v=zVjokllyfbM&feature=youtu.be "VIDEO1")
 
 ## SSHing the Raspberry Pi
 First we need to be able to use the RPi.
@@ -16,7 +18,7 @@ ssh pi@192.168.2.24
 
 For a complete guide on this, check [this tutorial](https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md).
 
-## Configuring wifi
+## Configuring the wifi
 Second thing, we need to configure the RPi and the wifi adaptor (I use something similar to [this one](http://www.gearbest.com/raspberry-pi/pp_413677.html?currency=CAD&vip=989008&gclid=CLf9j-O6x9MCFUm2wAodf1IEGg)) to our local network.
 
 1. For scanning networks, you'll need:
@@ -46,7 +48,7 @@ sudo wpa_cli reconfigure
 
 This section is directly taken from [this complete tutorial](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 
-## Setting up RTMP server
+## Setting up the RTMP server
 Here we need to set up a RTMP server to listen to the incoming data from OBS. For this, we will use [nginx](http://nginx.org/en/download.html) and a [nginx RTMP module](https://github.com/arut/nginx-rtmp-module/).
 
 Just a quick side comment: When starting this step, I faced some problems related to an invalid repository source ([here](https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=123260) for details). Repository address updated, problem solved. ;)
@@ -57,7 +59,7 @@ sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
 ```
 
 2. Download and install nginx and its RTMP module (it can take sometime):
-```
+```bash
 #creates a folder
 mkdir rtmp-server
 #moves to this new folder
@@ -104,7 +106,7 @@ rtmp {
 ```
 
 4. Start nginx by:
-```
+```bash
 sudo /usr/local/nginx/sbin/nginx -s stop
 sudo /usr/local/nginx/sbin/nginx
 ```
@@ -137,7 +139,7 @@ sudo nano /etc/init.d/rtmp-server
 ```
 
 And put this script inside the file:
-```
+```bash
 #! /bin/sh
 # /etc/init.d/rtmp-server
 sudo /usr/local/nginx/sbin/nginx -s stop
@@ -161,5 +163,5 @@ More info custom initialization scripts in RPi can be found [here](http://www.st
 And that's it! In my case, I've done in an old video projector I have at home via RCA and speakers. ;)
 
 --
-Jeronimo Barbosa
-jeraman.info
+
+jeraman.info, 2017
