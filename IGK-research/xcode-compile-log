@@ -1,0 +1,510 @@
+=== BUILD TARGET openFrameworks OF PROJECT openFrameworksLib WITH THE DEFAULT CONFIGURATION (Release) ===
+
+Check dependencies
+
+=== BUILD TARGET webInsertion OF PROJECT webInsertion WITH THE DEFAULT CONFIGURATION (Release) ===
+
+Check dependencies
+
+ProcessInfoPlistFile bin/webInsertion.app/Contents/Info.plist openFrameworks-Info.plist
+    cd /Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    builtin-infoPlistUtility /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/openFrameworks-Info.plist -genpkginfo /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app/Contents/Info.plist
+
+PhaseScriptExecution Run\ Script build/webInsertion.build/Release/webInsertion.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+    cd /Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    export ACTION=build
+    export ALTERNATE_GROUP=staff
+    export ALTERNATE_MODE=u+w,go-w,a+rX
+    export ALTERNATE_OWNER=jeronimo
+    export ALWAYS_SEARCH_USER_PATHS=YES
+    export ALWAYS_USE_SEPARATE_HEADERMAPS=NO
+    export APPLE_INTERNAL_DEVELOPER_DIR=/AppleInternal/Developer
+    export APPLE_INTERNAL_DIR=/AppleInternal
+    export APPLE_INTERNAL_DOCUMENTATION_DIR=/AppleInternal/Documentation
+    export APPLE_INTERNAL_LIBRARY_DIR=/AppleInternal/Library
+    export APPLE_INTERNAL_TOOLS=/AppleInternal/Developer/Tools
+    export APPLICATION_EXTENSION_API_ONLY=NO
+    export APPLY_RULES_IN_COPY_FILES=NO
+    export ARCHS=x86_64
+    export ARCHS_STANDARD=x86_64
+    export ARCHS_STANDARD_32_64_BIT="x86_64 i386"
+    export ARCHS_STANDARD_32_BIT=i386
+    export ARCHS_STANDARD_64_BIT=x86_64
+    export ARCHS_STANDARD_INCLUDING_64_BIT=x86_64
+    export AVAILABLE_PLATFORMS="appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator"
+    export BITCODE_GENERATION_MODE=marker
+    export BUILD_ACTIVE_RESOURCES_ONLY=NO
+    export BUILD_COMPONENTS="headers build"
+    export BUILD_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build
+    export BUILD_ROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build
+    export BUILD_STYLE=
+    export BUILD_VARIANTS=normal
+    export BUILT_PRODUCTS_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin
+    export CACHE_ROOT=/var/folders/px/ds6nvw656yz1tshy6y915v280000gp/C/com.apple.DeveloperTools/7.3.1-7D1014/Xcode
+    export CCHROOT=/var/folders/px/ds6nvw656yz1tshy6y915v280000gp/C/com.apple.DeveloperTools/7.3.1-7D1014/Xcode
+    export CHMOD=/bin/chmod
+    export CHOWN=/usr/sbin/chown
+    export CLANG_CXX_LANGUAGE_STANDARD=compiler-default
+    export CLANG_CXX_LIBRARY=compiler-default
+    export CLANG_MODULES_BUILD_SESSION_FILE=/var/folders/px/ds6nvw656yz1tshy6y915v280000gp/C/org.llvm.clang/ModuleCache/Session.modulevalidation
+    export CLASS_FILE_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/JavaClasses
+    export CLEAN_PRECOMPS=YES
+    export CLONE_HEADERS=NO
+    export CODESIGNING_FOLDER_PATH=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app
+    export CODE_SIGNING_ALLOWED=YES
+    export COLOR_DIAGNOSTICS=YES
+    export COMBINE_HIDPI_IMAGES=YES
+    export COMMAND_MODE=legacy
+    export COMPOSITE_SDK_DIRS=/var/folders/px/ds6nvw656yz1tshy6y915v280000gp/C/com.apple.DeveloperTools/7.3.1-7D1014/Xcode/CompositeSDKs
+    export CONFIGURATION=Release
+    export CONFIGURATION_BUILD_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin
+    export CONFIGURATION_TEMP_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release
+    export CONTENTS_FOLDER_PATH=webInsertion.app/Contents
+    export COPYING_PRESERVES_HFS_DATA=NO
+    export COPY_HEADERS_RUN_UNIFDEF=NO
+    export COPY_PHASE_STRIP=YES
+    export COPY_RESOURCES_FROM_STATIC_FRAMEWORKS=YES
+    export CP=/bin/cp
+    export CREATE_INFOPLIST_SECTION_IN_BINARY=NO
+    export CURRENT_ARCH=x86_64
+    export CURRENT_VARIANT=normal
+    export DEAD_CODE_STRIPPING=YES
+    export DEBUGGING_SYMBOLS=YES
+    export DEBUG_INFORMATION_FORMAT=dwarf
+    export DEFAULT_COMPILER=com.apple.compilers.llvm.clang.1_0
+    export DEFAULT_KEXT_INSTALL_PATH=/Library/Extensions
+    export DEFINES_MODULE=NO
+    export DEPLOYMENT_LOCATION=NO
+    export DEPLOYMENT_POSTPROCESSING=NO
+    export DEPLOYMENT_TARGET_CLANG_ENV_NAME=MACOSX_DEPLOYMENT_TARGET
+    export DEPLOYMENT_TARGET_CLANG_FLAG_NAME=mmacosx-version-min
+    export DEPLOYMENT_TARGET_SETTING_NAME=MACOSX_DEPLOYMENT_TARGET
+    export DERIVED_FILES_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/DerivedSources
+    export DERIVED_FILE_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/DerivedSources
+    export DERIVED_SOURCES_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/DerivedSources
+    export DEVELOPER_APPLICATIONS_DIR=/Applications/Xcode.app/Contents/Developer/Applications
+    export DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin
+    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+    export DEVELOPER_FRAMEWORKS_DIR=/Applications/Xcode.app/Contents/Developer/Library/Frameworks
+    export DEVELOPER_FRAMEWORKS_DIR_QUOTED=/Applications/Xcode.app/Contents/Developer/Library/Frameworks
+    export DEVELOPER_LIBRARY_DIR=/Applications/Xcode.app/Contents/Developer/Library
+    export DEVELOPER_SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+    export DEVELOPER_TOOLS_DIR=/Applications/Xcode.app/Contents/Developer/Tools
+    export DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr
+    export DEVELOPMENT_LANGUAGE=English
+    export DOCUMENTATION_FOLDER_PATH=webInsertion.app/Contents/Resources/English.lproj/Documentation
+    export DO_HEADER_SCANNING_IN_JAM=NO
+    export DSTROOT=/tmp/webInsertion.dst
+    export DT_TOOLCHAIN_DIR=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
+    export DWARF_DSYM_FILE_NAME=webInsertion.app.dSYM
+    export DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT=NO
+    export DWARF_DSYM_FOLDER_PATH=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin
+    export EMBEDDED_CONTENT_CONTAINS_SWIFT=NO
+    export EMBEDDED_PROFILE_NAME=embedded.provisionprofile
+    export EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE=NO
+    export ENABLE_BITCODE=NO
+    export ENABLE_DEFAULT_HEADER_SEARCH_PATHS=YES
+    export ENABLE_HEADER_DEPENDENCIES=YES
+    export ENABLE_ON_DEMAND_RESOURCES=NO
+    export ENABLE_TESTABILITY=NO
+    export EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS=".DS_Store .svn .git .hg CVS"
+    export EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES="*.nib *.lproj *.framework *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj"
+    export EXECUTABLES_FOLDER_PATH=webInsertion.app/Contents/Executables
+    export EXECUTABLE_FOLDER_PATH=webInsertion.app/Contents/MacOS
+    export EXECUTABLE_NAME=webInsertion
+    export EXECUTABLE_PATH=webInsertion.app/Contents/MacOS/webInsertion
+    export EXPANDED_CODE_SIGN_IDENTITY=
+    export EXPANDED_CODE_SIGN_IDENTITY_NAME=
+    export EXPANDED_PROVISIONING_PROFILE=
+    export FILE_LIST=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/Objects/LinkFileList
+    export FIXED_FILES_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/FixedFiles
+    export FRAMEWORKS_FOLDER_PATH=webInsertion.app/Contents/Frameworks
+    export FRAMEWORK_FLAG_PREFIX=-framework
+    export FRAMEWORK_SEARCH_PATHS="/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin  \"/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/../../../../../Downloads/of_v0.9.8_osx_release/libs/glut/lib/osx\" ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx"
+    export FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1="\"/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/../../../../../Downloads/of_v0.9.8_osx_release/libs/glut/lib/osx\""
+    export FRAMEWORK_VERSION=A
+    export FULL_PRODUCT_NAME=webInsertion.app
+    export GCC3_VERSION=3.3
+    export GCC_AUTO_VECTORIZATION=YES
+    export GCC_DYNAMIC_NO_PIC=NO
+    export GCC_ENABLE_SSE3_EXTENSIONS=YES
+    export GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS=YES
+    export GCC_GENERATE_DEBUGGING_SYMBOLS=YES
+    export GCC_INLINES_ARE_PRIVATE_EXTERN=NO
+    export GCC_MODEL_TUNING=NONE
+    export GCC_OPTIMIZATION_LEVEL=3
+    export GCC_PFE_FILE_C_DIALECTS="c objective-c c++ objective-c++"
+    export GCC_SYMBOLS_PRIVATE_EXTERN=NO
+    export GCC_TREAT_WARNINGS_AS_ERRORS=NO
+    export GCC_UNROLL_LOOPS=YES
+    export GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+    export GCC_VERSION_IDENTIFIER=com_apple_compilers_llvm_clang_1_0
+    export GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS=YES
+    export GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO=NO
+    export GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL=NO
+    export GCC_WARN_UNINITIALIZED_AUTOS=NO
+    export GCC_WARN_UNUSED_VALUE=NO
+    export GCC_WARN_UNUSED_VARIABLE=NO
+    export GENERATE_MASTER_OBJECT_FILE=NO
+    export GENERATE_PKGINFO_FILE=YES
+    export GENERATE_PROFILING_CODE=NO
+    export GID=20
+    export GROUP=staff
+    export HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT=YES
+    export HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES=YES
+    export HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS=YES
+    export HEADERMAP_INCLUDES_PROJECT_HEADERS=YES
+    export HEADERMAP_USES_FRAMEWORK_PREFIX_ENTRIES=YES
+    export HEADERMAP_USES_VFS=NO
+    export HEADER_BOOST="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/include\""
+    export HEADER_CAIRO="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/include/cairo\""
+    export HEADER_FMODEX="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/fmodex/include\""
+    export HEADER_FREEIMAGE="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/FreeImage/include\""
+    export HEADER_FREETYPE="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/include\""
+    export HEADER_FREETYPE2="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/include/freetype2\""
+    export HEADER_GLEW="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/glew/include\""
+    export HEADER_GLFW="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/glfw/include\""
+    export HEADER_OF="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/openFrameworks/**\""
+    export HEADER_POCO="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/include\""
+    export HEADER_RTAUDIO="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/rtAudio/include\""
+    export HEADER_SEARCH_PATHS="/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/include \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openFrameworks/**\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/include/freetype2\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/fmodex/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glew/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/FreeImage/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/tess2/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/include/cairo\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/rtAudio/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glfw/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/utf8cpp/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/include\" ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxAvFoundationHLSPlayer/src ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxGui/src ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/src ../../../../../Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/src"
+    export HEADER_SSL="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/include\""
+    export HEADER_TESS2="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/tess2/include\""
+    export HEADER_UTF8="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/utf8cpp/include\""
+    export HIDE_BITCODE_SYMBOLS=YES
+    export HOME=/Users/jeronimo
+    export ICON=icon.icns
+    export ICONV=/usr/bin/iconv
+    export ICON_FILE=../../../../../Downloads/of_v0.9.8_osx_release/libs/openFrameworksCompiled/project/osx/icon.icns
+    export ICON_FILE_PATH=../../../../../Downloads/of_v0.9.8_osx_release/libs/openFrameworksCompiled/project/osx/
+    export ICON_NAME_DEBUG=icon-debug.icns
+    export ICON_NAME_RELEASE=icon.icns
+    export INFOPLIST_EXPAND_BUILD_SETTINGS=YES
+    export INFOPLIST_FILE=openFrameworks-Info.plist
+    export INFOPLIST_OUTPUT_FORMAT=same-as-input
+    export INFOPLIST_PATH=webInsertion.app/Contents/Info.plist
+    export INFOPLIST_PREPROCESS=NO
+    export INFOSTRINGS_PATH=webInsertion.app/Contents/Resources/English.lproj/InfoPlist.strings
+    export INSTALL_DIR=/tmp/webInsertion.dst/Applications
+    export INSTALL_GROUP=staff
+    export INSTALL_MODE_FLAG=u+w,go-w,a+rX
+    export INSTALL_OWNER=jeronimo
+    export INSTALL_PATH=/Applications
+    export INSTALL_ROOT=/tmp/webInsertion.dst
+    export JAVAC_DEFAULT_FLAGS="-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"
+    export JAVA_APP_STUB=/System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub
+    export JAVA_ARCHIVE_CLASSES=YES
+    export JAVA_ARCHIVE_TYPE=JAR
+    export JAVA_COMPILER=/usr/bin/javac
+    export JAVA_FOLDER_PATH=webInsertion.app/Contents/Resources/Java
+    export JAVA_FRAMEWORK_RESOURCES_DIRS=Resources
+    export JAVA_JAR_FLAGS=cv
+    export JAVA_SOURCE_SUBDIR=.
+    export JAVA_USE_DEPENDENCIES=YES
+    export JAVA_ZIP_FLAGS=-urg
+    export JIKES_DEFAULT_FLAGS="+E +OLDCSO"
+    export KEEP_PRIVATE_EXTERNS=NO
+    export LD_DEPENDENCY_INFO_FILE=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/Objects-normal/x86_64/webInsertion_dependency_info.dat
+    export LD_GENERATE_MAP_FILE=NO
+    export LD_MAP_FILE_PATH=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/webInsertion-LinkMap-normal-x86_64.txt
+    export LD_NO_PIE=NO
+    export LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER=YES
+    export LEGACY_DEVELOPER_DIR=/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer
+    export LEX=lex
+    export LIBRARY_FLAG_NOSPACE=YES
+    export LIBRARY_FLAG_PREFIX=-l
+    export LIBRARY_KEXT_INSTALL_PATH=/Library/Extensions
+    export LIBRARY_SEARCH_PATHS="/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin "
+    export LIB_BOOST_FS="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/lib/osx/boost_filesystem.a\""
+    export LIB_BOOST_SYSTEM="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/lib/osx/boost_system.a\""
+    export LIB_CAIRO1="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/cairo-script-interpreter.a\""
+    export LIB_CAIRO2="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/cairo.a\""
+    export LIB_CAIRO3="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/pixman-1.a\""
+    export LIB_FMODEX="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/fmodex/lib/osx/libfmodex.dylib\""
+    export LIB_FREEIMAGE="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/FreeImage/lib/osx/freeimage.a\""
+    export LIB_FREETYPE="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/lib/osx/freetype.a\""
+    export LIB_GLEW="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/glew/lib/osx/glew.a\""
+    export LIB_GLFW="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/glfw/lib/osx/glfw3.a\""
+    export LIB_GLUT="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/glut/lib/osx/GLUT.framework/Versions/A/GLUT\""
+    export LIB_OPENSSL1="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/lib/osx/crypto.a\""
+    export LIB_OPENSSL2="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/lib/osx/ssl.a\""
+    export LIB_POCO="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoCrypto.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoData.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoDataSQLite.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoJSON.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoUtil.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoXML.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNet.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNetSSL.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoZip.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoFoundation.a\""
+    export LIB_POCO_0="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoCrypto.a\""
+    export LIB_POCO_1="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoData.a\""
+    export LIB_POCO_2="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoDataSQLite.a\""
+    export LIB_POCO_3="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoJSON.a\""
+    export LIB_POCO_4="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoUtil.a\""
+    export LIB_POCO_5="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoXML.a\""
+    export LIB_POCO_6="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNet.a\""
+    export LIB_POCO_7="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNetSSL.a\""
+    export LIB_POCO_8="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoZip.a\""
+    export LIB_POCO_9="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoFoundation.a\""
+    export LIB_RTAUDIO="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/rtAudio/lib/osx/rtAudio.a\""
+    export LIB_TESS="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/tess2/lib/osx/tess2.a\""
+    export LINKER_DISPLAYS_MANGLED_NAMES=NO
+    export LINK_FILE_LIST_normal_x86_64=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/Objects-normal/x86_64/webInsertion.LinkFileList
+    export LINK_WITH_STANDARD_LIBRARIES=YES
+    export LOCALIZABLE_CONTENT_DIR=
+    export LOCALIZED_RESOURCES_FOLDER_PATH=webInsertion.app/Contents/Resources/English.lproj
+    export LOCAL_ADMIN_APPS_DIR=/Applications/Utilities
+    export LOCAL_APPS_DIR=/Applications
+    export LOCAL_DEVELOPER_DIR=/Library/Developer
+    export LOCAL_LIBRARY_DIR=/Library
+    export LOCROOT=
+    export LOCSYMROOT=
+    export MACH_O_TYPE=mh_execute
+    export MACOSX_DEPLOYMENT_TARGET=10.7
+    export MAC_OS_X_PRODUCT_BUILD_VERSION=15G31
+    export MAC_OS_X_VERSION_ACTUAL=101106
+    export MAC_OS_X_VERSION_MAJOR=101100
+    export MAC_OS_X_VERSION_MINOR=1106
+    export NATIVE_ARCH=i386
+    export NATIVE_ARCH_32_BIT=i386
+    export NATIVE_ARCH_64_BIT=x86_64
+    export NATIVE_ARCH_ACTUAL=x86_64
+    export NO_COMMON=YES
+    export OBJECT_FILE_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/Objects
+    export OBJECT_FILE_DIR_normal=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/Objects-normal
+    export OBJROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build
+    export OF_CORE_FRAMEWORKS="-framework Accelerate -framework AGL -framework AppKit -framework ApplicationServices -framework AudioToolbox -framework AVFoundation -framework Cocoa -framework CoreAudio -framework CoreFoundation -framework CoreMedia -framework CoreServices -framework CoreVideo -framework IOKit -framework OpenGL -framework QuartzCore -framework QuickTime -framework QTKit -framework GLUT"
+    export OF_CORE_HEADERS="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/openFrameworks/**\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/include/freetype2\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/fmodex/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glew/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/FreeImage/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/tess2/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/include/cairo\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/rtAudio/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glfw/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/utf8cpp/include\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/include\""
+    export OF_CORE_LIBS="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoCrypto.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoData.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoDataSQLite.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoJSON.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoUtil.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoXML.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNet.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNetSSL.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoZip.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoFoundation.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/tess2/lib/osx/tess2.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glew/lib/osx/glew.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/cairo.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/pixman-1.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/rtAudio/lib/osx/rtAudio.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/lib/osx/crypto.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/lib/osx/ssl.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glfw/lib/osx/glfw3.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/FreeImage/lib/osx/freeimage.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/lib/osx/freetype.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/lib/osx/boost_filesystem.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/lib/osx/boost_system.a\""
+    export OF_PATH=../../../../../Downloads/of_v0.9.8_osx_release
+    export ONLY_ACTIVE_ARCH=YES
+    export OS=MACOS
+    export OSAC=/usr/bin/osacompile
+    export OTHER_CPLUSPLUSFLAGS="-D__MACOSX_CORE__ -mtune=native"
+    export OTHER_LDFLAGS="\"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoCrypto.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoData.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoDataSQLite.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoJSON.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoUtil.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoXML.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNet.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoNetSSL.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoZip.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/poco/lib/osx/PocoFoundation.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/tess2/lib/osx/tess2.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glew/lib/osx/glew.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/cairo.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/cairo/lib/osx/pixman-1.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/rtAudio/lib/osx/rtAudio.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/lib/osx/crypto.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/openssl/lib/osx/ssl.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/glfw/lib/osx/glfw3.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/FreeImage/lib/osx/freeimage.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/freetype/lib/osx/freetype.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/lib/osx/boost_filesystem.a\" \"../../../../../Downloads/of_v0.9.8_osx_release/libs/boost/lib/osx/boost_system.a\" -framework Accelerate -framework AGL -framework AppKit -framework ApplicationServices -framework AudioToolbox -framework AVFoundation -framework Cocoa -framework CoreAudio -framework CoreFoundation -framework CoreMedia -framework CoreServices -framework CoreVideo -framework IOKit -framework OpenGL -framework QuartzCore -framework QuickTime -framework QTKit -framework GLUT"
+    export PACKAGE_TYPE=com.apple.package-type.wrapper.application
+    export PASCAL_STRINGS=YES
+    export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Library/TeX/texbin:/Users/jeronimo/Library/Android/sdk/platform-tools:/Users/jeronimo/Library/Android/sdk/tools:/System/Library/Frameworks"
+    export PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES="/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"
+    export PBDEVELOPMENTPLIST_PATH=webInsertion.app/Contents/pbdevelopment.plist
+    export PFE_FILE_C_DIALECTS="objective-c c++ objective-c++"
+    export PKGINFO_FILE_PATH=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/PkgInfo
+    export PKGINFO_PATH=webInsertion.app/Contents/PkgInfo
+    export PLATFORM_DEVELOPER_APPLICATIONS_DIR=/Applications/Xcode.app/Contents/Developer/Applications
+    export PLATFORM_DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin
+    export PLATFORM_DEVELOPER_LIBRARY_DIR=/Applications/Xcode.app/Contents/Developer/Library
+    export PLATFORM_DEVELOPER_SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs
+    export PLATFORM_DEVELOPER_TOOLS_DIR=/Applications/Xcode.app/Contents/Developer/Tools
+    export PLATFORM_DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr
+    export PLATFORM_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform
+    export PLATFORM_DISPLAY_NAME="OS X"
+    export PLATFORM_NAME=macosx
+    export PLATFORM_PREFERRED_ARCH=x86_64
+    export PLATFORM_PRODUCT_BUILD_VERSION=7D1014
+    export PLIST_FILE_OUTPUT_FORMAT=same-as-input
+    export PLUGINS_FOLDER_PATH=webInsertion.app/Contents/PlugIns
+    export PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR=YES
+    export PRECOMP_DESTINATION_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/PrefixHeaders
+    export PRESERVE_DEAD_CODE_INITS_AND_TERMS=NO
+    export PRIVATE_HEADERS_FOLDER_PATH=webInsertion.app/Contents/PrivateHeaders
+    export PRODUCT_MODULE_NAME=webInsertion
+    export PRODUCT_NAME=webInsertion
+    export PRODUCT_SETTINGS_PATH=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/openFrameworks-Info.plist
+    export PRODUCT_TYPE=com.apple.product-type.application
+    export PROFILING_CODE=NO
+    export PROJECT=webInsertion
+    export PROJECT_DERIVED_FILE_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/DerivedSources
+    export PROJECT_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    export PROJECT_FILE_PATH=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/webInsertion.xcodeproj
+    export PROJECT_NAME=webInsertion
+    export PROJECT_TEMP_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build
+    export PROJECT_TEMP_ROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build
+    export PUBLIC_HEADERS_FOLDER_PATH=webInsertion.app/Contents/Headers
+    export RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS=YES
+    export REMOVE_CVS_FROM_RESOURCES=YES
+    export REMOVE_GIT_FROM_RESOURCES=YES
+    export REMOVE_HEADERS_FROM_EMBEDDED_BUNDLES=YES
+    export REMOVE_HG_FROM_RESOURCES=YES
+    export REMOVE_SVN_FROM_RESOURCES=YES
+    export REZ_COLLECTOR_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/ResourceManagerResources
+    export REZ_OBJECTS_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/ResourceManagerResources/Objects
+    export REZ_SEARCH_PATHS="/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin "
+    export SCAN_ALL_SOURCE_FILES_FOR_INCLUDES=NO
+    export SCRIPTS_FOLDER_PATH=webInsertion.app/Contents/Resources/Scripts
+    export SCRIPT_INPUT_FILE_COUNT=0
+    export SCRIPT_OUTPUT_FILE_COUNT=0
+    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
+    export SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
+    export SDK_DIR_macosx10_11=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk
+    export SDK_NAME=macosx10.11
+    export SDK_NAMES=macosx10.11
+    export SDK_PRODUCT_BUILD_VERSION=15E60
+    export SDK_VERSION=10.11
+    export SDK_VERSION_ACTUAL=101100
+    export SDK_VERSION_MAJOR=101100
+    export SDK_VERSION_MINOR=1100
+    export SED=/usr/bin/sed
+    export SEPARATE_STRIP=NO
+    export SEPARATE_SYMBOL_EDIT=NO
+    export SET_DIR_MODE_OWNER_GROUP=YES
+    export SET_FILE_MODE_OWNER_GROUP=NO
+    export SHALLOW_BUNDLE=NO
+    export SHARED_DERIVED_FILE_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/DerivedSources
+    export SHARED_FRAMEWORKS_FOLDER_PATH=webInsertion.app/Contents/SharedFrameworks
+    export SHARED_PRECOMPS_DIR=/var/folders/px/ds6nvw656yz1tshy6y915v280000gp/C/com.apple.DeveloperTools/7.3.1-7D1014/Xcode/SharedPrecompiledHeaders
+    export SHARED_SUPPORT_FOLDER_PATH=webInsertion.app/Contents/SharedSupport
+    export SKIP_INSTALL=NO
+    export SOURCE_ROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    export SRCROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    export STRINGS_FILE_OUTPUT_ENCODING=UTF-16
+    export STRIP_BITCODE_FROM_COPIED_FILES=NO
+    export STRIP_INSTALLED_PRODUCT=YES
+    export STRIP_STYLE=all
+    export SUPPORTED_PLATFORMS=macosx
+    export SUPPORTS_TEXT_BASED_API=NO
+    export SWIFT_PLATFORM_TARGET_PREFIX=macosx
+    export SYMROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build
+    export SYSTEM_ADMIN_APPS_DIR=/Applications/Utilities
+    export SYSTEM_APPS_DIR=/Applications
+    export SYSTEM_CORE_SERVICES_DIR=/System/Library/CoreServices
+    export SYSTEM_DEMOS_DIR=/Applications/Extras
+    export SYSTEM_DEVELOPER_APPS_DIR=/Applications/Xcode.app/Contents/Developer/Applications
+    export SYSTEM_DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin
+    export SYSTEM_DEVELOPER_DEMOS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"
+    export SYSTEM_DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+    export SYSTEM_DEVELOPER_DOC_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library"
+    export SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"
+    export SYSTEM_DEVELOPER_JAVA_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"
+    export SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"
+    export SYSTEM_DEVELOPER_RELEASENOTES_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"
+    export SYSTEM_DEVELOPER_TOOLS=/Applications/Xcode.app/Contents/Developer/Tools
+    export SYSTEM_DEVELOPER_TOOLS_DOC_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"
+    export SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"
+    export SYSTEM_DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr
+    export SYSTEM_DEVELOPER_UTILITIES_DIR=/Applications/Xcode.app/Contents/Developer/Applications/Utilities
+    export SYSTEM_DOCUMENTATION_DIR=/Library/Documentation
+    export SYSTEM_KEXT_INSTALL_PATH=/System/Library/Extensions
+    export SYSTEM_LIBRARY_DIR=/System/Library
+    export TAPI_VERIFY_MODE=ErrorsOnly
+    export TARGETNAME=webInsertion
+    export TARGET_BUILD_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin
+    export TARGET_NAME=webInsertion
+    export TARGET_TEMP_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build
+    export TEMP_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build
+    export TEMP_FILES_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build
+    export TEMP_FILE_DIR=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build
+    export TEMP_ROOT=/Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build
+    export TOOLCHAINS=com.apple.dt.toolchain.XcodeDefault
+    export TOOLCHAIN_DIR=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain
+    export TREAT_MISSING_BASELINES_AS_TEST_FAILURES=NO
+    export UID=502
+    export UNLOCALIZED_RESOURCES_FOLDER_PATH=webInsertion.app/Contents/Resources
+    export UNSTRIPPED_PRODUCT=NO
+    export USER=jeronimo
+    export USER_APPS_DIR=/Users/jeronimo/Applications
+    export USER_LIBRARY_DIR=/Users/jeronimo/Library
+    export USE_DYNAMIC_NO_PIC=YES
+    export USE_HEADERMAP=YES
+    export USE_HEADER_SYMLINKS=NO
+    export VALIDATE_PRODUCT=NO
+    export VALID_ARCHS="x86_64 i386"
+    export VERBOSE_PBXCP=NO
+    export VERSIONPLIST_PATH=webInsertion.app/Contents/version.plist
+    export VERSION_INFO_BUILDER=jeronimo
+    export VERSION_INFO_FILE=webInsertion_vers.c
+    export VERSION_INFO_STRING="\"@(#)PROGRAM:webInsertion  PROJECT:webInsertion-\""
+    export WRAPPER_EXTENSION=app
+    export WRAPPER_NAME=webInsertion.app
+    export WRAPPER_SUFFIX=.app
+    export WRAP_ASSET_PACKS_IN_SEPARATE_DIRECTORIES=NO
+    export XCODE_APP_SUPPORT_DIR=/Applications/Xcode.app/Contents/Developer/Library/Xcode
+    export XCODE_PRODUCT_BUILD_VERSION=7D1014
+    export XCODE_VERSION_ACTUAL=0731
+    export XCODE_VERSION_MAJOR=0700
+    export XCODE_VERSION_MINOR=0730
+    export XPCSERVICES_FOLDER_PATH=webInsertion.app/Contents/XPCServices
+    export YACC=yacc
+    export arch=x86_64
+    export baseConfigurationReference=E4EB6923138AFD0F00A09F29
+    export diagnostic_message_length=80
+    export variant=normal
+    /bin/sh -c /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/build/webInsertion.build/Release/webInsertion.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+building file list ... done
+icon.icns
+
+sent 776067 bytes  received 42 bytes  1552218.00 bytes/sec
+total size is 775846  speedup is 1.00
+building file list ... done
+created directory /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app/Contents/Frameworks
+libfmodex.dylib
+
+sent 2295171 bytes  received 42 bytes  4590426.00 bytes/sec
+total size is 2294756  speedup is 1.00
+building file list ... done
+GLUT.framework/
+GLUT.framework/GLUT -> Versions/Current/GLUT
+GLUT.framework/Headers -> Versions/Current/Headers
+GLUT.framework/Resources -> Versions/Current/Resources
+GLUT.framework/Versions/
+GLUT.framework/Versions/Current -> A
+GLUT.framework/Versions/A/
+GLUT.framework/Versions/A/GLUT
+GLUT.framework/Versions/A/Headers/
+GLUT.framework/Versions/A/Headers/copy.h
+GLUT.framework/Versions/A/Headers/extrude.h
+GLUT.framework/Versions/A/Headers/glsmap.h
+GLUT.framework/Versions/A/Headers/glsmapint.h
+GLUT.framework/Versions/A/Headers/glut.h
+GLUT.framework/Versions/A/Headers/glutbitmap.h
+GLUT.framework/Versions/A/Headers/glutf90.h
+GLUT.framework/Versions/A/Headers/glutstroke.h
+GLUT.framework/Versions/A/Headers/gutil.h
+GLUT.framework/Versions/A/Headers/intersect.h
+GLUT.framework/Versions/A/Headers/port.h
+GLUT.framework/Versions/A/Headers/rot.h
+GLUT.framework/Versions/A/Headers/segment.h
+GLUT.framework/Versions/A/Headers/tube.h
+GLUT.framework/Versions/A/Headers/tube_gc.h
+GLUT.framework/Versions/A/Headers/vvector.h
+GLUT.framework/Versions/A/Resources/
+GLUT.framework/Versions/A/Resources/Caution.tiff
+GLUT.framework/Versions/A/Resources/Info.plist
+GLUT.framework/Versions/A/Resources/blankCursor.tiff
+GLUT.framework/Versions/A/Resources/bottomCursor.tiff
+GLUT.framework/Versions/A/Resources/bottomleftCursor.tiff
+GLUT.framework/Versions/A/Resources/bottomrightCursor.tiff
+GLUT.framework/Versions/A/Resources/crossCursor.tiff
+GLUT.framework/Versions/A/Resources/cycleCursor.tiff
+GLUT.framework/Versions/A/Resources/destroyCursor.tiff
+GLUT.framework/Versions/A/Resources/fingerCursor.tiff
+GLUT.framework/Versions/A/Resources/helpCursor.tiff
+GLUT.framework/Versions/A/Resources/leftCursor.tiff
+GLUT.framework/Versions/A/Resources/leftRightCursor.tiff
+GLUT.framework/Versions/A/Resources/rightArrowCursor.tiff
+GLUT.framework/Versions/A/Resources/rightCursor.tiff
+GLUT.framework/Versions/A/Resources/sprayCursor.tiff
+GLUT.framework/Versions/A/Resources/topCursor.tiff
+GLUT.framework/Versions/A/Resources/topleftCursor.tiff
+GLUT.framework/Versions/A/Resources/toprightCursor.tiff
+GLUT.framework/Versions/A/Resources/upDownCursor.tiff
+GLUT.framework/Versions/A/Resources/waitCursor.tiff
+GLUT.framework/Versions/A/Resources/English.lproj/
+GLUT.framework/Versions/A/Resources/English.lproj/GLUTUI.strings
+GLUT.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+GLUT.framework/Versions/A/Resources/English.lproj/GLUT.nib/
+GLUT.framework/Versions/A/Resources/English.lproj/GLUT.nib/objects.nib
+GLUT.framework/Versions/A/Resources/English.lproj/GLUTClipboard.nib/
+GLUT.framework/Versions/A/Resources/English.lproj/GLUTClipboard.nib/objects.nib
+GLUT.framework/Versions/A/Resources/English.lproj/GLUTPreferences.nib/
+GLUT.framework/Versions/A/Resources/English.lproj/GLUTPreferences.nib/objects.nib
+
+sent 1223399 bytes  received 1044 bytes  2448886.00 bytes/sec
+total size is 1220002  speedup is 1.00
+
+PBXCp /Users/jeronimo/Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework bin/webInsertion.app/Contents/Frameworks/Syphon.framework
+    cd /Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/jeronimo/Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app/Contents/Frameworks
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/jeronimo/Downloads/of_v0.9.8_osx_release/addons/ofxSyphon/libs/Syphon/lib/osx/Syphon.framework/Versions/A/Syphon -o /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app/Contents/Frameworks/Syphon.framework/Versions/A/Syphon
+
+Touch bin/webInsertion.app
+    cd /Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    /usr/bin/touch -c /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app
+
+RegisterWithLaunchServices bin/webInsertion.app
+    cd /Users/jeronimo/Documents/dev/insertions/osx/webInsertion
+    builtin-lsRegisterURL /Users/jeronimo/Documents/dev/insertions/osx/webInsertion/bin/webInsertion.app
+
+** BUILD SUCCEEDED **
