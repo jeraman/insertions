@@ -1,7 +1,7 @@
-# Workshop 1
-![VIDEO](insertion-concordia.png)](https://www.youtube.com/watch?v=UjOWl1vSuEc "VIDEO")
+# 1 - Speculative Live Cluster Workshop
+[![VIDEO](insertion-concordia.png)](https://www.youtube.com/watch?v=UjOWl1vSuEc "VIDEO")
 
-**Local:** Speculative Life Cluster, Concordia University, Montreal, Canada.
+**Local:** Concordia University, Montreal, Canada.
 
 **Date:** Thursday, April 13 2016.
 
