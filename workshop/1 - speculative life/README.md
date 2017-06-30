@@ -4,13 +4,13 @@ This was the first workshop of the _insertions_ project, performed after an invi
 
 **Local:** Concordia University, Montreal, Canada.
 
-**Date:** Thursday, April 13 2016.
+**Date:** Thursday, April 13 2017.
 
 **Duration:** 4 hours.
 
 **Link:** http://www.speculativelife.com/event/tools-for-activism-%E2%80%8Binsertions-into-mediatic-circuits/
 
-## Collaborative insertion
+## Result
 [![VIDEO](insertion-concordia.png)](https://www.youtube.com/watch?v=UjOWl1vSuEc "VIDEO")
 
 ## Photos
