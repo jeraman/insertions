@@ -1,5 +1,6 @@
 # 1 - Speculative Live Cluster Workshop
-[![VIDEO](insertion-concordia.png)](https://www.youtube.com/watch?v=UjOWl1vSuEc "VIDEO")
+
+This was the first workshop of the _insertions_ project, performed after an invitation of the [Speculative Live](http://www.speculativelife.com) research cluster. The workshop happened around one month after the [bomb threat that targeted the Muslim community of Concordia University](http://www.cbc.ca/news/canada/montreal/montreal-concordia-university-bomb-threats-1.4006151).
 
 **Local:** Concordia University, Montreal, Canada.
 
@@ -8,6 +9,9 @@
 **Duration:** 4 hours.
 
 **Link:** http://www.speculativelife.com/event/tools-for-activism-%E2%80%8Binsertions-into-mediatic-circuits/
+
+## Collaborative insertion
+[![VIDEO](insertion-concordia.png)](https://www.youtube.com/watch?v=UjOWl1vSuEc "VIDEO")
 
 ## Photos
 ![workshop1](images/IMG_1292.JPG)
