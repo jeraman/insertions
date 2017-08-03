@@ -38,6 +38,10 @@ This project motivates me because it allows me to explore three particular quest
 ### [Insertion n. 4] Final presidential debate - Clinton vs. Trumlolo
 [![VIDEO4](insercao%234/video.png)](https://www.youtube.com/watch?v=wMI1vJmla4Y "VIDEO4")
 
+### [Insertion n. 6] Barraco rola solto no DNA!
+[![VIDEO4](insercao%236/video.png)](https://www.youtube.com/watch?v=RgPJKUi_gTs "VIDEO4")
+
+
 ## References
 [Inserções em Circuitos Ideológicos](https://passantes.redezero.org/reportagens/cildo/inserc.htm), by Cildo Meireles, 1970.
 
