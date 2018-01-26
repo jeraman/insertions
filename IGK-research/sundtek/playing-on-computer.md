@@ -1,6 +1,6 @@
 # Playing Sundtek on computer
 
-This textfile documents how to play HD TV on my OS X computer using the Sundtek device.
+This file documents how to play the TV on my OS X computer using the Sundtek device.
 
 ## Pluging the Hardware In
 In short:
@@ -8,7 +8,7 @@ In short:
 HD Antenna >  Sundtek ATSC >  Computer USB.
 ```
 
-If the drivers are properly installed (ie. watch [this video](https://www.youtube.com/watch?v=o7K6hIPoaSc) or seek help on Sundtek support forum), you can check if the computer can see your hardware. First login as root. Then:
+If the drivers are properly installed (for this, watch [this video](https://www.youtube.com/watch?v=o7K6hIPoaSc) or seek help on Sundtek support forum), you can check if the computer can see your hardware. First login as root. Then:
 
 ```bash
 cd /opt/bin
@@ -48,28 +48,33 @@ Open the media server in your browser:
 http://localhost:22000/
 ```
 
-If you device is already setup (ie. watch [this video](https://www.youtube.com/watch?v=sEnB6PGZHVw) or seek help on Sundtek's support forum), you should be able to see the channels available in your area as in the picture below:
+If you media server is already setup (for this, watch [this video](https://www.youtube.com/watch?v=sEnB6PGZHVw) or seek help on Sundtek's support forum), you should be able to see the channels available in your area as in the picture below:
 
-[![VIDEO1](images/media-server-channels.png)]
+![VIDEO1](images/media-server-channels.png)
 
-We need to find the link correspondent to the channel you want to use. In my case, that's how I did it:
+## Finding the proper link for the channel
+Now, We need to find the link correspondent to the channel you want to use. In my case, that's how I did it:
   1. Click on 'sundtek' menu. You should be able to see all the channels again;
   2. Right click on one channels and click on 'Inspect';
   3. Still inside the media server, double click on the channel you want to watch;
   4. The link for the channel should show up on your inspector (see image below).
 
-[![VIDEO1](images/link.png)]
+![VIDEO1](images/link.png)
 
 You can note that there are two links in this link. The first one is what you're looking for. Something like:
 ```
 http://localhost:22000/stream/CBFT%2DDT%09
 ```
-
-Now, the final step is to open this link using [VLC](https://www.videolan.org/). If you don't have VLC, download it. You can load the link under:
+## Playing the channel on VLC
+Now, the final step is to open our link using [VLC](https://www.videolan.org/). If you don't have VLC, download it. You can load the link under:
 ```
 File > Open Network > URL:
 ```
 
 That should be it, as you can see below:
 
-[![VIDEO1](images/tv-on-osx.png)]
+![VIDEO1](images/tv-on-osx.png)
+
+
+## Problem
+- While the computer's audio is working fine, I'm not getting any audio when watching TV through VLC. Need to dig it further to see why this is happening.
