@@ -85,28 +85,6 @@ Now we want to watch TV using a custom C++ program using LibVLC (as seen [here](
 
 The source-code is available on the folder sundtekInsertion.
 
-So far, I am able to get only the first frame of the video. The video then freezes, and the sound continues. This problem seems unrelated to the Sundtek device, it seems related to LibVLC instead, because the freezing also happen when testing other HD TS files ([this link](https://www.hdpvrcapture.com/wordpress/?page_id=97) has several examples for testing).
-
-These are the errors I get:
-
-```
-[[32;1m00000001016381b8[0m] core vout display error: [31;1mFailed to change zoom[0m
-
-[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (PSI decoder): TS discontinuity (received 11, expected 8) for PID 0[0m
-
-[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (PSI decoder): TS duplicate (received 11, expected 12) for PID 48[0m
-
-[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (misc PSI): Bad CRC_32 table 0x0 !!![0m
-
-[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (PSI decoder): PSI section too long
-```
-
-### Core vout display error: Failed to change zoom?
-This problem seems unrelated because the same message appeared for the videos that worked fine (eg. [this one](http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8), and even local files) .
-
-### TS discontinuity?
-- https://gist.github.com/windyinsc/71b10a7f6b0f9b603af913ad01474539
-
 
 ## Problem
 - While the computer's audio is working fine, I'm not getting any audio when watching TV through VLC (or LibVLC). Need to dig it further to see why this is happening.
