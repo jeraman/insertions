@@ -1,5 +1,4 @@
 # Playing Sundtek on computer
-
 This file documents how to play the TV on my OS X computer using the Sundtek device.
 
 ## Pluging the Hardware In
@@ -53,7 +52,7 @@ If you media server is already setup (for this, watch [this video](https://www.y
 ![VIDEO1](images/media-server-channels.png)
 
 ## Finding the proper link for the channel
-Now, We need to find the link correspondent to the channel you want to use. In my case, that's how I did it:
+Now, we need to find the link correspondent to the channel you want to use. In my case, that's how I did it:
   1. Click on 'sundtek' menu. You should be able to see all the channels again;
   2. Right click on one channels and click on 'Inspect';
   3. Still inside the media server, double click on the channel you want to watch;
@@ -61,12 +60,18 @@ Now, We need to find the link correspondent to the channel you want to use. In m
 
 ![VIDEO1](images/link.png)
 
-You can note that there are two links in this link. The first one is what you're looking for. Something like:
+You can note that there are two links in this link. The first one is what you're looking for. Something like these:
 ```
 http://localhost:22000/stream/CBFT%2DDT%09
+http://localhost:22000/stream/CBMT%2DDT%09
+http://localhost:22000/stream/CFTU%2DDT%09
+http://localhost:22000/stream/CIVM%2DHD%09
+http://localhost:22000/stream/CKMI%2DSD%09
 ```
+
+
 ## Playing the channel on VLC
-Now, the final step is to open our link using [VLC](https://www.videolan.org/). If you don't have VLC, download it. You can load the link under:
+The next step is to open our link using [VLC](https://www.videolan.org/). If you don't have VLC, download it. You can load the link under:
 ```
 File > Open Network > URL:
 ```
@@ -75,6 +80,33 @@ That should be it, as you can see below:
 
 ![VIDEO1](images/tv-on-osx.png)
 
+## Applying the channel on C++
+Now we want to watch TV using a custom C++ program using LibVLC (as seen [here](https://github.com/jeraman/insertions/blob/master/IGK-research/mpeg-ts-support.md)).
+
+The source-code is available on the folder sundtekInsertion.
+
+So far, I am able to get only the first frame of the video. The video then freezes, and the sound continues. This problem seems unrelated to the Sundtek device, it seems related to LibVLC instead, because the freezing also happen when testing other HD TS files ([this link](https://www.hdpvrcapture.com/wordpress/?page_id=97) has several examples for testing).
+
+These are the errors I get:
+
+```
+[[32;1m00000001016381b8[0m] core vout display error: [31;1mFailed to change zoom[0m
+
+[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (PSI decoder): TS discontinuity (received 11, expected 8) for PID 0[0m
+
+[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (PSI decoder): TS duplicate (received 11, expected 12) for PID 48[0m
+
+[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (misc PSI): Bad CRC_32 table 0x0 !!![0m
+
+[[32;1m000000010151b368[0m] ts demux error: [31;1mlibdvbpsi error (PSI decoder): PSI section too long
+```
+
+### Core vout display error: Failed to change zoom?
+This problem seems unrelated because the same message appeared for the videos that worked fine (eg. [this one](http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8), and even local files) .
+
+### TS discontinuity?
+- https://gist.github.com/windyinsc/71b10a7f6b0f9b603af913ad01474539
+
 
 ## Problem
-- While the computer's audio is working fine, I'm not getting any audio when watching TV through VLC. Need to dig it further to see why this is happening.
+- While the computer's audio is working fine, I'm not getting any audio when watching TV through VLC (or LibVLC). Need to dig it further to see why this is happening.
