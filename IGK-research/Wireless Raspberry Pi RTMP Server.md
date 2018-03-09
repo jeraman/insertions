@@ -142,6 +142,16 @@ And put this script inside the file:
 ```bash
 #! /bin/sh
 # /etc/init.d/rtmp-server
+
+### BEGIN INIT INFO
+# Provides:          rtmp-server
+# Required-Start:    $all
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Initializing a RTMP server for video streaming
+### END INIT INFO
+
 sudo /usr/local/nginx/sbin/nginx -s stop
 sudo /usr/local/nginx/sbin/nginx
 while [ 1 ]
