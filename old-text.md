@@ -11,7 +11,7 @@
 
 "Insertions into Mediatic Circuits" are a series of media interventions (here called insertions) where live streams from the internet are downloaded, copied, manipulated, and finally streamed back to the internet in realtime. The new stream is almost identical to the original one, except for the insertion itself. The process is transparent to the media viewer.
 
-The project is possible due to a custom software framework implemented by the author. This framework is open source and intended to be a creative platform for critical artists and activists.
+This framework is open source and intended to be a creative platform for critical artists and activists.
 
 Project was conceived and developed by Jeraman, initiated in 2016.
 
